@@ -1,3 +1,46 @@
-<div class="dashboard" id="dashboard" style="display: none;">
-    <!-- O conteúdo será preenchido dinamicamente pelo JavaScript -->
-</div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Escala de Trabalhadores</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="logo">
+            <img src="logo.png" alt="Logo da Empresa">
+        </div>
+        
+        <div class="form-container" id="loginForm">
+            <h2>Login de Supervisor</h2>
+            <form id="supervisorLoginForm">
+                <div class="form-group">
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+        
+        <div class="dashboard" id="dashboard" style="display: none;">
+            <!-- O conteúdo do dashboard será preenchido dinamicamente pelo JavaScript -->
+        </div>
+    </div>
+
+    <div id="spinner" class="spinner" style="display: none;">
+        Carregando...
+    </div>
+
+    <div class="signature">
+        Desenvolvido por [Seu Nome/Empresa] - 2024
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
